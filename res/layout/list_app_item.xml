@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_item"
+    android:paddingBottom="5.0dip"
+    android:paddingTop="5.0dip" >
+
+    <TextView
+        android:id="@+id/data_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:text="122"
+         />
+    
+    <ImageView
+        android:id="@+id/imgApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/data_id"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvAppLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imgApp"
+        android:text="TextView" />
+    
+    <TextView
+        android:id="@+id/tvPkgName"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tvAppLabel"
+        android:text="pkgname" />
+
+    <CheckBox
+        android:id="@+id/cb_item"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgApp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imgApp"
+         />
+
+    <TextView
+        android:id="@+id/tvcmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgApp"
+        android:layout_toRightOf="@+id/imgApp"
+        android:text="tvcmp123" />
+
+</RelativeLayout>
